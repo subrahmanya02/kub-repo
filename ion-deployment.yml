@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ion-Deployment
+  labels:
+    app: ion
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ion
+  templates:
+    metadata:
+      labels:
+        app:ion
+    spec:
+      containers:
+        - name: ion
+          image: subrahmanya02/myrepo:v1.0
+          ports:
+            - containerPort: 80
