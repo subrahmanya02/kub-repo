@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ion-Deployment
+  name: ion-deployment
   labels:
     app: ion
 spec:
