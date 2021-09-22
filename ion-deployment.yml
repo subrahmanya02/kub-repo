@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app:ion
+        app: ion
     spec:
       containers:
         - name: ion
